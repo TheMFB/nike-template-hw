@@ -15,6 +15,7 @@ exports.generate = (template, dynamicData) => {
     // Adds null values into template in order to convert to JSON.
     template = convert.giveMeEmpties(template);
 
+    console.log("---- template: ", template);
     let messages = JSON.parse(template);
 
     // Replace all the variables in the messages appropriately.
